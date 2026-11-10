@@ -1,0 +1,137 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #eaf4ff;
+    color: #34465c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+main {
+    background-color: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px #b9d5ee;
+}
+
+h1 {
+    text-align: center;
+    color: #6b9ac4;
+    font-size: 27px;
+}
+
+main > p {
+    text-align: center;
+    color: #71869b;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #bdd8f0;
+    border-radius: 10px;
+    background-color: #f5faff;
+    color: #34465c;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: 2px solid #7daedb;
+}
+
+section {
+    background-color: #f0f7ff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    overflow-wrap: anywhere;
+}
+
+section h2 {
+    font-size: 21px;
+    color: #527fa9;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+section a {
+    color: #3679b8;
+}
+
+.datos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 15px;
+    background-color: #a8cfee;
+    color: #284c6c;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #87b8df;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+button[hidden] {
+    display: none;
+}
+
+.error {
+    background-color: #ffe1e5;
+    color: #a13f50;
+}
+
+.cargando {
+    background-color: #e4edf7;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .datos {
+        flex-direction: column;
+    }
+}
